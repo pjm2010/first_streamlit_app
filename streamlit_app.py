@@ -69,6 +69,7 @@ if streamlit.button('Get the fruit list'):
 #streamlit.stop()
 
 
+streamlit.title('View our fruit list- Add your favourites')
 
 
 second_choice = streamlit.text_input('What fruit would you like to add?')

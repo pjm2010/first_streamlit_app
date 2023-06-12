@@ -57,7 +57,9 @@ try:
     streamlit.dataframe(value_returned)
 except:
   streamlit.error()
- 
+
+
+streamlit.title('View our fruit list- Add your favourites')
 if streamlit.button('Get the fruit list'):
      my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
      return_list=get_food_list()
@@ -69,7 +71,7 @@ if streamlit.button('Get the fruit list'):
 #streamlit.stop()
 
 
-streamlit.title('View our fruit list- Add your favourites')
+
 
 
 second_choice = streamlit.text_input('What fruit would you like to add?')

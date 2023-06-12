@@ -66,7 +66,7 @@ if streamlit.button('Get the fruit list'):
      my_cnx.close()
     
   
-streamlit.stop()
+#streamlit.stop()
 
 
 

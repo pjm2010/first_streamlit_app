@@ -53,7 +53,7 @@ try:
 except:
   streamlit.error()
  
-if streamlit.button():
+if streamlit.button('Get the fruit list'):
      my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
      return_list=get_food_list()
      streamlit.header("The fruit load list contains")
